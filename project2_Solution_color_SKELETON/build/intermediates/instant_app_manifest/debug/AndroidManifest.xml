@@ -15,6 +15,7 @@
         android:debuggable="true"
         android:icon="@drawable/camera"
         android:label="@string/app_name"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
 
         <!-- see https://developer.android.com/reference/androidx/core/content/FileProvider -->

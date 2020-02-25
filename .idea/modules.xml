@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Project2_Solution_color_Appbar_SKELETON.iml" filepath="$PROJECT_DIR$/Project2_Solution_color_Appbar_SKELETON.iml" />
-      <module fileurl="file://$PROJECT_DIR$/bitmap_utilities/bitmap_utilities.iml" filepath="$PROJECT_DIR$/bitmap_utilities/bitmap_utilities.iml" />
-      <module fileurl="file://$PROJECT_DIR$/project2_Solution_color_SKELETON/project2_Solution_color_SKELETON.iml" filepath="$PROJECT_DIR$/project2_Solution_color_SKELETON/project2_Solution_color_SKELETON.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Project2_Solution_color_Appbar_SKELETON.iml" filepath="$PROJECT_DIR$/Project2_Solution_color_Appbar_SKELETON.iml" group="Project2_Solution_color_Appbar_SKELETON" />
+      <module fileurl="file://$PROJECT_DIR$/bitmap_utilities/bitmap_utilities.iml" filepath="$PROJECT_DIR$/bitmap_utilities/bitmap_utilities.iml" group="Project2_Solution_color_Appbar_SKELETON/bitmap_utilities" />
+      <module fileurl="file://$PROJECT_DIR$/project2_Solution_color_SKELETON/project2_Solution_color_SKELETON.iml" filepath="$PROJECT_DIR$/project2_Solution_color_SKELETON/project2_Solution_color_SKELETON.iml" group="Project2_Solution_color_Appbar_SKELETON/project2_Solution_color_SKELETON" />
     </modules>
   </component>
 </project>
