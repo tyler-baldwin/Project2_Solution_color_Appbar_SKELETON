@@ -1518,6 +1518,7 @@ id add
 id alertTitle
 id all
 id always
+id appbar
 id async
 id auto
 id barrier

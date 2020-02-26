@@ -81,8 +81,12 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
         //TODO be sure to set up the appbar in the activity
 
         //dont display these
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        if( getSupportActionBar() == null){
 
+        }
+        else {
+            getSupportActionBar().setDisplayShowTitleEnabled(false);
+        }
         FloatingActionButton fab = findViewById(R.id.buttonTakePicture);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -152,10 +156,19 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
         //get some paths
         // Create the File where the photo should go
         File photoFile = createImageFile(ORIGINAL_FILE);
-        originalImagePath = photoFile.getAbsolutePath();
-
         File processedfile = createImageFile(PROCESSED_FILE);
-        processedImagePath=processedfile.getAbsolutePath();
+        try{
+            originalImagePath = photoFile.getAbsolutePath();
+            processedImagePath=processedfile.getAbsolutePath();
+        }
+        catch(Exception e){
+
+        }
+
+
+
+
+
 
         //worst case get from default image
         //save this for restoring

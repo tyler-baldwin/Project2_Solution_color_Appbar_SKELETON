@@ -46,8 +46,10 @@ public class Camera_Helpers {
      * @return  a complete bitmap or null if not there
      */
 	static public Bitmap loadAndScaleImage(String originalImagePath, int viewheight, int viewwidth) {
-		
-		if (originalImagePath.isEmpty() || viewheight == 0 || viewwidth == 0)
+		if (originalImagePath== null){
+			return null;
+		}
+		if (originalImagePath.length() == 0 || viewheight == 0 || viewwidth == 0)
 			throw new IllegalArgumentException();
 		
 		Log.d(DEBUG_TAG, "In Process Image");
