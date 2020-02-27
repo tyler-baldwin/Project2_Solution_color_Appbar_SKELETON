@@ -3,7 +3,9 @@ package com.example.solution_color;
 
 import android.Manifest;
 import android.content.Intent;
+
 import androidx.preference.PreferenceManager;
+
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.content.pm.PackageManager;
@@ -15,6 +17,7 @@ import android.os.Build;
 import android.os.Bundle;
 
 import android.provider.MediaStore;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
@@ -77,16 +80,14 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
 
-        //TODO be sure to set up the appbar in the activity
 
         //dont display these
-        if( getSupportActionBar() == null){
 
-        }
-        else {
-            getSupportActionBar().setDisplayShowTitleEnabled(false);
-        }
+
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+
         FloatingActionButton fab = findViewById(R.id.buttonTakePicture);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -149,7 +150,7 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
     }
 
 
-    private void setUpFileSystem(){
+    private void setUpFileSystem() {
         //TODO do we have needed permissions?
         //TODO if not then dont proceed
 
@@ -157,17 +158,12 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
         // Create the File where the photo should go
         File photoFile = createImageFile(ORIGINAL_FILE);
         File processedfile = createImageFile(PROCESSED_FILE);
-        try{
+        try {
             originalImagePath = photoFile.getAbsolutePath();
-            processedImagePath=processedfile.getAbsolutePath();
-        }
-        catch(Exception e){
+            processedImagePath = processedfile.getAbsolutePath();
+        } catch (Exception e) {
 
         }
-
-
-
-
 
 
         //worst case get from default image
@@ -201,6 +197,7 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
     }
 
     //DUMP for students
+
     /**
      * Verify that the specific list of permisions requested have been granted, otherwise ask for
      * these permissions.  Note this is coarse in that I assumme I need them all
@@ -268,7 +265,7 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
         }
 
         //sketchify the image
-        if (bmpOriginal == null){
+        if (bmpOriginal == null) {
             Log.e(DEBUG_TAG, "doSketch: bmpOriginal = null");
             return;
         }
@@ -290,12 +287,12 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
         }
 
         //colorize the image
-        if (bmpOriginal == null){
+        if (bmpOriginal == null) {
             Log.e(DEBUG_TAG, "doColorize: bmpOriginal = null");
             return;
         }
         //if not thresholded yet then do nothing
-        if (bmpThresholded == null){
+        if (bmpThresholded == null) {
             Log.e(DEBUG_TAG, "doColorize: bmpThresholded not thresholded yet");
             return;
         }
@@ -345,7 +342,7 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
      * Notifies the OS to index the new image, so it shows up in Gallery.
      * see https://www.programcreek.com/java-api-examples/index.php?api=android.media.MediaScannerConnection
      */
-    private void scanSavedMediaFile( final String path) {
+    private void scanSavedMediaFile(final String path) {
         // silly array hack so closure can reference scannerConnection[0] before it's created
         final MediaScannerConnection[] scannerConnection = new MediaScannerConnection[1];
         try {
