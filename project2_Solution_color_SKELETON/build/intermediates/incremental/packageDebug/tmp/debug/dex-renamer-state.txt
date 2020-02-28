@@ -1,10 +1,10 @@
-#Wed Feb 26 19:32:22 EST 2020
+#Fri Feb 28 18:08:44 EST 2020
 path.2=classes_0.dex
 path.1=classes.dex
 path.0=classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.2=C\:\\Users\\Zues\\StudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\out\\classes_0.dex
-base.1=C\:\\Users\\Zues\\StudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
-base.0=C\:\\Users\\Zues\\StudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
+base.2=C\:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\out\\classes_0.dex
+base.1=C\:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
+base.0=C\:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex

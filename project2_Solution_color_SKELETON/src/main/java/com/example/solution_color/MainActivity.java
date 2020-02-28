@@ -4,6 +4,7 @@ package com.example.solution_color;
 import android.Manifest;
 import android.content.Intent;
 
+import androidx.core.content.ContextCompat;
 import androidx.preference.PreferenceManager;
 
 import android.content.SharedPreferences;
@@ -47,6 +48,8 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
     private static final String ORIGINAL_FILE = "origfile.png";
     private static final String PROCESSED_FILE = "procfile.png";
 
+    private static final int[] PERM_CODES = {100, 101, 102};
+
     private static final int TAKE_PICTURE = 1;
     private static final double SCALE_FROM_0_TO_255 = 2.55;
     private static final int DEFAULT_COLOR_PERCENT = 3;
@@ -85,7 +88,7 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
 
         //dont display these
 
-
+        verifyPermissions();
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         FloatingActionButton fab = findViewById(R.id.buttonTakePicture);
@@ -193,26 +196,68 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
      */
     @Override
     public void onRequestPermissionsResult(int permsRequestCode, String[] permissions, int[] grantResults) {
-        //TODO fill in
+        super.onRequestPermissionsResult(permsRequestCode, permissions, grantResults);
+        if (permsRequestCode == PERM_CODES[0]) {
+            if (grantResults.length > 0
+                    && grantResults[0] != PackageManager.PERMISSION_GRANTED) {
+                Toast.makeText(MainActivity.this,
+                        "Need Camera Permission",
+                        Toast.LENGTH_SHORT)
+                        .show();
+                verifyPermissions();
+            }
+        }  if (permsRequestCode == PERM_CODES[1]) {
+            if (grantResults.length > 0
+                    && grantResults[0] != PackageManager.PERMISSION_GRANTED) {
+                Toast.makeText(MainActivity.this,
+                        "Need Read Permission",
+                        Toast.LENGTH_SHORT)
+                        .show();
+                verifyPermissions();
+            }
+        }  if (permsRequestCode == PERM_CODES[2]) {
+            if (grantResults.length > 0
+                    && grantResults[0] != PackageManager.PERMISSION_GRANTED) {
+                Toast.makeText(MainActivity.this,
+                        "Need Write Permission",
+                        Toast.LENGTH_SHORT)
+                        .show();
+                verifyPermissions();
+            }
+        }
     }
 
-    //DUMP for students
-
     /**
+     * THIS IS UG:Y BUT I COULDN"T FIX IT WITH A LOOP BC PERMISSIONS AREN"T STRINGS FOR SOME REASON??
      * Verify that the specific list of permisions requested have been granted, otherwise ask for
      * these permissions.  Note this is coarse in that I assumme I need them all
      */
     private boolean verifyPermissions() {
-
-        //TODO fill in
-
-        //and return false until they are granted
-        return false;
+        if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.CAMERA)
+                == PackageManager.PERMISSION_DENIED) {
+            // Requesting the permission
+            ActivityCompat.requestPermissions(MainActivity.this,
+                    new String[]{Manifest.permission.CAMERA}, PERM_CODES[0]
+            );
+        }  if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.READ_EXTERNAL_STORAGE)
+                == PackageManager.PERMISSION_DENIED) {
+            // Requesting the permission
+            ActivityCompat.requestPermissions(MainActivity.this,
+                    new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, PERM_CODES[1]
+            );
+        }  if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                == PackageManager.PERMISSION_DENIED) {
+            // Requesting the permission
+            ActivityCompat.requestPermissions(MainActivity.this,
+                    new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, PERM_CODES[2]
+            );
+        }
+        return true;
     }
 
     //take a picture and store it on external storage
     public void doTakePicture() {
-        //TODO verify that app has permission to use camera
+        verifyPermissions();
 
         //TODO manage launching intent to take a picture
 
