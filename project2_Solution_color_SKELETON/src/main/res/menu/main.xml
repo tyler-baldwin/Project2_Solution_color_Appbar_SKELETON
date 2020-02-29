@@ -1,5 +1,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-<!--TODO fill these in-->
+    <item
+        android:id="@+id/sketch"
+        android:title="sketchButton"
+        android:icon= "@drawable/pencil"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/color"
+        android:icon="@drawable/eye"
+        android:title="@string/colorizeButton"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_action_name"
+        android:title="@string/shareButton"
+        app:showAsAction="ifRoom" />
+
 </menu>

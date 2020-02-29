@@ -77,7 +77,6 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
     Bitmap bmpThresholded;              //the black and white version of original image
     Bitmap bmpThresholdedColor;         //the colorized version of the black and white image
 
-    //TODO manage all the permissions you need
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,7 +86,6 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
 
 
         //dont display these
-
         verifyPermissions();
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
@@ -95,8 +93,7 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //TODO manage this, mindful of permissions
-
+                doTakePicture();
             }
         });
 
@@ -154,8 +151,9 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
 
 
     private void setUpFileSystem() {
-        //TODO do we have needed permissions?
-        //TODO if not then dont proceed
+        if (!verifyPermissions()) {
+            return;
+        }
 
         //get some paths
         // Create the File where the photo should go
@@ -206,7 +204,8 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
                         .show();
                 verifyPermissions();
             }
-        }  if (permsRequestCode == PERM_CODES[1]) {
+        }
+        if (permsRequestCode == PERM_CODES[1]) {
             if (grantResults.length > 0
                     && grantResults[0] != PackageManager.PERMISSION_GRANTED) {
                 Toast.makeText(MainActivity.this,
@@ -215,7 +214,8 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
                         .show();
                 verifyPermissions();
             }
-        }  if (permsRequestCode == PERM_CODES[2]) {
+        }
+        if (permsRequestCode == PERM_CODES[2]) {
             if (grantResults.length > 0
                     && grantResults[0] != PackageManager.PERMISSION_GRANTED) {
                 Toast.makeText(MainActivity.this,
@@ -233,26 +233,25 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
      * these permissions.  Note this is coarse in that I assumme I need them all
      */
     private boolean verifyPermissions() {
+        boolean cam = true, read = true, write = true;
         if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.CAMERA)
                 == PackageManager.PERMISSION_DENIED) {
-            // Requesting the permission
-            ActivityCompat.requestPermissions(MainActivity.this,
-                    new String[]{Manifest.permission.CAMERA}, PERM_CODES[0]
-            );
-        }  if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.READ_EXTERNAL_STORAGE)
+            cam = false;
+        }
+        if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.READ_EXTERNAL_STORAGE)
                 == PackageManager.PERMISSION_DENIED) {
-            // Requesting the permission
-            ActivityCompat.requestPermissions(MainActivity.this,
-                    new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, PERM_CODES[1]
-            );
-        }  if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
+            read = false;
+        }
+        if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
                 == PackageManager.PERMISSION_DENIED) {
-            // Requesting the permission
+            write = false;
+        }
+        if (!(cam && read && write)) {
             ActivityCompat.requestPermissions(MainActivity.this,
-                    new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, PERM_CODES[2]
+                    new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE}, PERM_CODES[0]
             );
         }
-        return true;
+        return (cam && read && write);
     }
 
     //take a picture and store it on external storage
@@ -325,7 +324,6 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
     }
 
     public void doColorize() {
-        //TODO verify that app has permission to use file system
         //do we have needed permissions?
         if (!verifyPermissions()) {
             return;
@@ -358,21 +356,25 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
     }
 
     public void doShare() {
-        //TODO verify that app has permission to use file system
-        //do we have needed permissions?
         if (!verifyPermissions()) {
             return;
         }
-
+        // Toast.makeText(MainActivity.this, "Share", Toast.LENGTH_SHORT).show();
         //TODO share the processed image with appropriate subject, text and file URI
         //TODO the subject and text should come from the preferences set in the Settings Activity
 
     }
 
-    //TODO set this up
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         //TODO handle all of the appbar button clicks
+        switch (item.getItemId()) {
+            case R.id.share:
+                doShare();
+            case R.id.color:
+                doColorize();
+        }
 
         return true;
     }

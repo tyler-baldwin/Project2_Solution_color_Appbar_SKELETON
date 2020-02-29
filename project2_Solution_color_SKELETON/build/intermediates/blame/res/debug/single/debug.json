@@ -4,12 +4,12 @@
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\5d52d9573d8a8f70a8462cc8f8a42ce9\\material-1.1.0\\res\\layout\\text_view_without_line_height.xml"
     },
     {
-        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\anim_btn_checkbox_to_unchecked_icon_null_animation.xml.flat",
-        "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\anim\\btn_checkbox_to_unchecked_icon_null_animation.xml"
-    },
-    {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\anim_btn_checkbox_to_unchecked_icon_null_animation.xml.flat",
+        "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\anim\\btn_checkbox_to_unchecked_icon_null_animation.xml"
     },
     {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\interpolator_btn_checkbox_checked_mtrl_animation_interpolator_1.xml.flat",
@@ -32,24 +32,28 @@
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\layout_preference_dropdown.xml.flat",
-        "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\1c9808e429abf680ccd4a9858ea887b5\\preference-1.1.0\\res\\layout\\preference_dropdown.xml"
-    },
-    {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
-        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\layout_abc_activity_chooser_view_list_item.xml.flat",
-        "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\layout_preference_dropdown.xml.flat",
+        "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\1c9808e429abf680ccd4a9858ea887b5\\preference-1.1.0\\res\\layout\\preference_dropdown.xml"
+    },
+    {
+        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_track_material.xml.flat",
+        "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_ic_star_black_36dp.png"
     },
     {
-        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_track_material.xml.flat",
-        "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable\\abc_seekbar_track_material.xml"
+        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\layout_abc_activity_chooser_view_list_item.xml.flat",
+        "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_name.png.flat",
+        "source": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\src\\main\\res\\drawable-xxhdpi\\ic_action_name.png"
     },
     {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_exit.xml.flat",
@@ -96,12 +100,12 @@
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_alert_dialog.xml.flat",
-        "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\5d52d9573d8a8f70a8462cc8f8a42ce9\\material-1.1.0\\res\\layout\\mtrl_alert_dialog.xml"
-    },
-    {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_list_divider_material.xml.flat",
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-v21\\abc_list_divider_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_alert_dialog.xml.flat",
+        "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\5d52d9573d8a8f70a8462cc8f8a42ce9\\material-1.1.0\\res\\layout\\mtrl_alert_dialog.xml"
     },
     {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
@@ -116,16 +120,16 @@
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\layout_abc_search_view.xml.flat",
-        "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\layout\\abc_search_view.xml"
+        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\color_mtrl_bottom_nav_colored_item_tint.xml.flat",
+        "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\5d52d9573d8a8f70a8462cc8f8a42ce9\\material-1.1.0\\res\\color\\mtrl_bottom_nav_colored_item_tint.xml"
     },
     {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\color_mtrl_bottom_nav_colored_item_tint.xml.flat",
-        "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\5d52d9573d8a8f70a8462cc8f8a42ce9\\material-1.1.0\\res\\color\\mtrl_bottom_nav_colored_item_tint.xml"
+        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\layout_abc_search_view.xml.flat",
+        "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\layout\\abc_search_view.xml"
     },
     {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_dropdown_arrow.xml.flat",
@@ -148,12 +152,12 @@
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
-        "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
-    },
-    {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
+        "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
     },
     {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_picker_header_fullscreen.xml.flat",
@@ -180,12 +184,12 @@
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\5d52d9573d8a8f70a8462cc8f8a42ce9\\material-1.1.0\\res\\layout\\design_layout_snackbar_include.xml"
     },
     {
-        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_ic_arrow_drop_up.xml.flat",
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\5d52d9573d8a8f70a8462cc8f8a42ce9\\material-1.1.0\\res\\drawable\\mtrl_ic_arrow_drop_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable_btn_radio_off_to_on_mtrl_animation.xml.flat",
@@ -212,12 +216,12 @@
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable\\abc_ic_clear_material.xml"
     },
     {
-        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\color_material_on_background_disabled.xml.flat",
-        "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\5d52d9573d8a8f70a8462cc8f8a42ce9\\material-1.1.0\\res\\color\\material_on_background_disabled.xml"
-    },
-    {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable_abc_cab_background_top_material.xml.flat",
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\color_material_on_background_disabled.xml.flat",
+        "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\5d52d9573d8a8f70a8462cc8f8a42ce9\\material-1.1.0\\res\\color\\material_on_background_disabled.xml"
     },
     {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
@@ -236,24 +240,24 @@
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
-        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
-        "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_16dp.png"
-    },
-    {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\layout_text_view_with_line_height_from_layout.xml.flat",
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\5d52d9573d8a8f70a8462cc8f8a42ce9\\material-1.1.0\\res\\layout\\text_view_with_line_height_from_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
+        "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\color_mtrl_navigation_item_text_color.xml.flat",
@@ -284,12 +288,12 @@
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_material_dark.xml.flat",
-        "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\color\\abc_primary_text_material_dark.xml"
-    },
-    {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\xml_standalone_badge_gravity_top_start.xml.flat",
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\5d52d9573d8a8f70a8462cc8f8a42ce9\\material-1.1.0\\res\\xml\\standalone_badge_gravity_top_start.xml"
+    },
+    {
+        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_material_dark.xml.flat",
+        "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\color\\abc_primary_text_material_dark.xml"
     },
     {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\anim_btn_radio_to_off_mtrl_ring_outer_path_animation.xml.flat",
@@ -326,6 +330,10 @@
     {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_ic_action_name.xml.flat",
+        "source": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\src\\main\\res\\drawable-anydpi\\ic_action_name.xml"
     },
     {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_item_layout.xml.flat",
@@ -500,6 +508,10 @@
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
+        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_eye.png.flat",
+        "source": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\src\\main\\res\\drawable-mdpi\\eye.png"
+    },
+    {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable_abc_item_background_holo_light.xml.flat",
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable\\abc_item_background_holo_light.xml"
     },
@@ -566,6 +578,10 @@
     {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_name.png.flat",
+        "source": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\src\\main\\res\\drawable-xhdpi\\ic_action_name.png"
     },
     {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\anim_design_snackbar_out.xml.flat",
@@ -920,6 +936,10 @@
         "source": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\src\\main\\res\\layout\\settings_activity.xml"
     },
     {
+        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_eye.png.flat",
+        "source": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\src\\main\\res\\drawable-hdpi\\eye.png"
+    },
+    {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\color_mtrl_calendar_selected_range.xml.flat",
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\5d52d9573d8a8f70a8462cc8f8a42ce9\\material-1.1.0\\res\\color\\mtrl_calendar_selected_range.xml"
     },
@@ -1176,6 +1196,10 @@
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\5d52d9573d8a8f70a8462cc8f8a42ce9\\material-1.1.0\\res\\layout\\mtrl_picker_header_toggle.xml"
     },
     {
+        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_name.png.flat",
+        "source": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\src\\main\\res\\drawable-hdpi\\ic_action_name.png"
+    },
+    {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\e9dab9c67c1ee3668e0bbf86c6d8cbd8\\core-1.1.0\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
     },
@@ -1346,6 +1370,10 @@
     {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\6119d746697059b7e1b74aab4d181f56\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_eye.png.flat",
+        "source": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\src\\main\\res\\drawable-xxhdpi\\eye.png"
     },
     {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -1750,6 +1778,10 @@
     {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\color_mtrl_navigation_item_icon_tint.xml.flat",
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\5d52d9573d8a8f70a8462cc8f8a42ce9\\material-1.1.0\\res\\color\\mtrl_navigation_item_icon_tint.xml"
+    },
+    {
+        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_action_name.png.flat",
+        "source": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\src\\main\\res\\drawable-mdpi\\ic_action_name.png"
     },
     {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\xml_standalone_badge.xml.flat",
@@ -2224,6 +2256,10 @@
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\5d52d9573d8a8f70a8462cc8f8a42ce9\\material-1.1.0\\res\\layout\\mtrl_alert_dialog_actions.xml"
     },
     {
+        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_eye.xml.flat",
+        "source": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\src\\main\\res\\drawable-anydpi\\eye.xml"
+    },
+    {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_fab_hide_motion_spec.xml.flat",
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\5d52d9573d8a8f70a8462cc8f8a42ce9\\material-1.1.0\\res\\animator\\mtrl_fab_hide_motion_spec.xml"
     },
@@ -2378,6 +2414,10 @@
     {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\layout_test_toolbar_custom_background.xml.flat",
         "source": "C:\\Users\\openf\\.gradle\\caches\\transforms-2\\files-2.1\\5d52d9573d8a8f70a8462cc8f8a42ce9\\material-1.1.0\\res\\layout\\test_toolbar_custom_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_eye.png.flat",
+        "source": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\src\\main\\res\\drawable-xhdpi\\eye.png"
     },
     {
         "merged": "C:\\Users\\openf\\AndroidStudioProjects\\Project2_Solution_color_Appbar_SKELETON\\project2_Solution_color_SKELETON\\build\\intermediates\\res\\merged\\debug\\layout_preference_widget_seekbar_material.xml.flat",

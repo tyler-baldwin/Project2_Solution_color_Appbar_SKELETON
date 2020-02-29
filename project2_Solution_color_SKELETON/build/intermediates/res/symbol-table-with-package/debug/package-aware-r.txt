@@ -1412,7 +1412,9 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable eye
 drawable gutters
+drawable ic_action_name
 drawable ic_arrow_down_24dp
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
@@ -1541,6 +1543,7 @@ id clear_text
 id clip_horizontal
 id clip_vertical
 id collapseActionView
+id color
 id confirm_button
 id container
 id content
@@ -1604,6 +1607,7 @@ id line3
 id listMode
 id list_item
 id masked
+id menu_main
 id message
 id middle
 id mini
@@ -1686,6 +1690,7 @@ id seekbar_value
 id select_dialog_listview
 id selected
 id settings
+id share
 id shortcut
 id showCustom
 id showHome
