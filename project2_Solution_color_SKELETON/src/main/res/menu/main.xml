@@ -22,6 +22,5 @@
         android:icon="@drawable/ic_action_name"
         android:title="@string/shareButton"
         app:showAsAction="always" />
-    <menu app:showAsAction="always" />
 
 </menu>
