@@ -1450,7 +1450,9 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable pencil
 drawable preference_list_divider_material
+drawable reset
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1607,7 +1609,6 @@ id line3
 id listMode
 id list_item
 id masked
-id menu_main
 id message
 id middle
 id mini
@@ -1662,6 +1663,7 @@ id progress_circular
 id progress_horizontal
 id radio
 id recycler_view
+id reset
 id right
 id right_icon
 id right_side
@@ -1695,6 +1697,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id sketch
 id skipCollapsed
 id slide
 id smallLabel
@@ -1945,6 +1948,7 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string colorizeButton
 string copy
 string error_icon_content_description
 string expand_button_title
@@ -1995,7 +1999,9 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string preference_copied
+string resetButton
 string search_menu_title
+string shareButton
 string shareTitle
 string sharemessage
 string status_bar_notification_info_overflow

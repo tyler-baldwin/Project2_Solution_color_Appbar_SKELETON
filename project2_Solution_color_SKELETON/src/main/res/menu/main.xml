@@ -1,21 +1,27 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
+    <item
+        android:id="@+id/reset"
+        android:icon="@drawable/reset"
+        android:title="@string/resetButton"
+        app:showAsAction="always" />
     <item
         android:id="@+id/sketch"
+        android:icon="@drawable/pencil"
         android:title="sketchButton"
-        android:icon= "@drawable/pencil"
         app:showAsAction="always" />
     <item
         android:id="@+id/color"
         android:icon="@drawable/eye"
         android:title="@string/colorizeButton"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always" />
     <item
         android:id="@+id/share"
         android:icon="@drawable/ic_action_name"
         android:title="@string/shareButton"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always" />
+    <menu app:showAsAction="always" />
 
 </menu>

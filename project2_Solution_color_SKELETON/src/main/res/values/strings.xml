@@ -4,5 +4,5 @@
     <string name="shareTitle">Welcome to my app from Tyler Baldwin!</string>
     <string name="shareButton">Share</string>
     <string name="colorizeButton">Colorize</string>
-
+    <string name="resetButton">Reset</string>
 </resources>
