@@ -278,7 +278,6 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
      * delete original and processed images, then rescan media paths to pick up that they are gone.
      */
     private void doReset() {
-        //TODO verify that app has permission to use file system
         //do we have needed permissions?
         if (!verifyPermissions()) {
             return;
@@ -302,7 +301,6 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
     }
 
     public void doSketch() {
-        //TODO verify that app has permission to use file system
         //do we have needed permissions?
         if (!verifyPermissions()) {
             return;
@@ -374,6 +372,11 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
                 doShare();
             case R.id.color:
                 doColorize();
+            case R.id.reset:
+                doReset();
+            case R.id.sketch:
+                doSketch();
+            case R.id.settings:
         }
 
         return true;

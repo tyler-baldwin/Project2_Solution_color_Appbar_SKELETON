@@ -1,26 +1,33 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
+    <group
+        android:id="@+id/group"
+        android:menuCategory="container"
+        android:visible="true">
+        <item
+            android:id="@+id/reset"
+            android:icon="@drawable/reset"
+            android:title="@string/resetButton"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/sketch"
+            android:icon="@drawable/pencil"
+            android:title="sketchButton"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/color"
+            android:icon="@drawable/eye"
+            android:title="@string/colorizeButton"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/ic_action_name"
+            android:title="@string/shareButton"
+            app:showAsAction="ifRoom" />
+    </group>
     <item
-        android:id="@+id/reset"
-        android:icon="@drawable/reset"
-        android:title="@string/resetButton"
-        app:showAsAction="always" />
-    <item
-        android:id="@+id/sketch"
-        android:icon="@drawable/pencil"
-        android:title="sketchButton"
-        app:showAsAction="always" />
-    <item
-        android:id="@+id/color"
-        android:icon="@drawable/eye"
-        android:title="@string/colorizeButton"
-        app:showAsAction="always" />
-    <item
-        android:id="@+id/share"
-        android:icon="@drawable/ic_action_name"
-        android:title="@string/shareButton"
-        app:showAsAction="always" />
-
+        android:id="@+id/settings"
+        android:title="Settings"
+        />
 </menu>

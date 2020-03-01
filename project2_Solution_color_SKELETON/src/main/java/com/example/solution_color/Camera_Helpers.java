@@ -12,27 +12,27 @@ import java.io.OutputStream;
 
 /**
  * Created by Perkins on 2/1/2015.
- *
+ * <p>
  * Purely static helper functions
  * Camera load and save
  */
 public class Camera_Helpers {
-	static  final String DEBUG_TAG ="CartoonActivity";
+    static final String DEBUG_TAG = "CartoonActivity";
     private static final float ROTATE_90_DEGREES = 90;
     private static final int FIRST_PIX_X = 0;
     private static final int FIRST_PIX_Y = 0;
-	private static final String TAG = "Camera_Helpers";
+    private static final String TAG = "Camera_Helpers";
 
-	/**
-	   The caller references the Camera_Helpers using <tt>Camera_Helpers.func()</tt>,
-	   and so on. Thus, the caller should be prevented from constructing objects of 
-	   this class, by declaring this private constructor. 
-	  */
-	private Camera_Helpers(){
-		//this prevents even the native class from 
-	    //calling this ctor as well :
-	    throw new AssertionError();
-	}
+    /**
+     * The caller references the Camera_Helpers using <tt>Camera_Helpers.func()</tt>,
+     * and so on. Thus, the caller should be prevented from constructing objects of
+     * this class, by declaring this private constructor.
+     */
+    private Camera_Helpers() {
+        //this prevents even the native class from
+        //calling this ctor as well :
+        throw new AssertionError();
+    }
 
     /**
      * loads photo from originalImagePath<br>
@@ -40,98 +40,100 @@ public class Camera_Helpers {
      * see the following for loading and scaling drawables<br>
      * see http://developer.android.com/training/displaying-bitmaps/index.html
      * html<br>
-     * @param originalImagePath  like storage/emulated/0/pictures/origfile.png
-     * @param viewheight size of your view
+     *
+     * @param originalImagePath like storage/emulated/0/pictures/origfile.png
+     * @param viewheight        size of your view
      * @param viewwidth
-     * @return  a complete bitmap or null if not there
+     * @return a complete bitmap or null if not there
      */
-	static public Bitmap loadAndScaleImage(String originalImagePath, int viewheight, int viewwidth) {
-		if (originalImagePath== null){
-			return null;
-		}
-		if (originalImagePath.length() == 0 || viewheight == 0 || viewwidth == 0)
-			throw new IllegalArgumentException();
-		
-		Log.d(DEBUG_TAG, "In Process Image");
-		Log.d(DEBUG_TAG, "Width="+ viewwidth + " Height="+viewheight);
+    static public Bitmap loadAndScaleImage(String originalImagePath, int viewheight, int viewwidth) {
+        if (originalImagePath == null) {
+            return null;
+        }
+        if (originalImagePath.length() == 0 || viewheight == 0 || viewwidth == 0)
+            throw new IllegalArgumentException();
 
-		// First decode with inJustDecodeBounds=true to check dimensions of bitmap
-		BitmapFactory.Options options = new BitmapFactory.Options();
+        Log.d(DEBUG_TAG, "In Process Image");
+        Log.d(DEBUG_TAG, "Width=" + viewwidth + " Height=" + viewheight);
+
+        // First decode with inJustDecodeBounds=true to check dimensions of bitmap
+        BitmapFactory.Options options = new BitmapFactory.Options();
 
         //just get the output from decodefile No Bitmap yet
-		options.inJustDecodeBounds = true;
-		BitmapFactory.decodeFile(originalImagePath, options);
+        options.inJustDecodeBounds = true;
+        BitmapFactory.decodeFile(originalImagePath, options);
 
-		int height = viewheight;
-		int width = viewwidth;
-		boolean flipImage = false;
+        int height = viewheight;
+        int width = viewwidth;
+        boolean flipImage = false;
 
-		// handle if its in landscape
-		if (options.outWidth > options.outHeight) {
-			height = viewwidth;
-			width = viewheight;
+        // handle if its in landscape
+        if (options.outWidth > options.outHeight) {
+            height = viewwidth;
+            width = viewheight;
 
             //flip it later
-			flipImage = true;
-		}
+            flipImage = true;
+        }
 
-		// lets see if we need to scale it
+        // lets see if we need to scale it
 
-		// calculate the sample size that fits current image
-		options.inSampleSize = calculateInSampleSize(options, width, height);
-		Log.d(DEBUG_TAG,
-				"options.inSampleSize ="
-						+ Integer.toString(options.inSampleSize));
+        // calculate the sample size that fits current image
+        options.inSampleSize = calculateInSampleSize(options, width, height);
+        Log.d(DEBUG_TAG,
+                "options.inSampleSize ="
+                        + Integer.toString(options.inSampleSize));
 
         //now get the bitmap now that we know params
-		options.inJustDecodeBounds = false;
-		Bitmap bmp = BitmapFactory.decodeFile(originalImagePath, options);
+        options.inJustDecodeBounds = false;
+        Bitmap bmp = BitmapFactory.decodeFile(originalImagePath, options);
 
-		if (flipImage) {
-			Matrix matrix = new Matrix();
-			matrix.postRotate(ROTATE_90_DEGREES);
-			bmp = Bitmap.createBitmap(bmp, FIRST_PIX_X, FIRST_PIX_Y, bmp.getWidth(),
-					bmp.getHeight(), matrix, true);
-		}
+        if (flipImage) {
+            Matrix matrix = new Matrix();
+            matrix.postRotate(ROTATE_90_DEGREES);
+            bmp = Bitmap.createBitmap(bmp, FIRST_PIX_X, FIRST_PIX_Y, bmp.getWidth(),
+                    bmp.getHeight(), matrix, true);
+        }
 
         //return complete scaled rotated bitmap
-		return bmp;
-	}
-     
-	/**
-	 * Calculates the size of the image
-	 * @param options
-	 * @param reqWidth
-	 * @param reqHeight
-	 * @return
-	 */
-	private static int calculateInSampleSize(BitmapFactory.Options options,
-			int reqWidth, int reqHeight) {
+        return bmp;
+    }
 
-		if (options ==null || reqWidth == 0 || reqHeight == 0)
-			throw new IllegalArgumentException();
-	
-		// Raw height and width of image
-		final int height    = options.outHeight;
-		final int width     = options.outWidth;
-		int inSampleSize    = 1;
+    /**
+     * Calculates the size of the image
+     *
+     * @param options
+     * @param reqWidth
+     * @param reqHeight
+     * @return
+     */
+    private static int calculateInSampleSize(BitmapFactory.Options options,
+                                             int reqWidth, int reqHeight) {
 
-		if (height > reqHeight || width > reqWidth) {
+        if (options == null || reqWidth == 0 || reqHeight == 0)
+            throw new IllegalArgumentException();
 
-			// Calculate ratios of height and width to requested height and
-			// width
-			final int heightRatio = Math.round((float) height
-					/ (float) reqHeight);
-			final int widthRatio = Math.round((float) width / (float) reqWidth);
+        // Raw height and width of image
+        final int height = options.outHeight;
+        final int width = options.outWidth;
+        int inSampleSize = 1;
 
-			// Choose the smallest ratio as inSampleSize value, this will
-			// guarantee
-			// a final image with both dimensions larger than or equal to the
-			// requested height and width.
-			inSampleSize = heightRatio < widthRatio ? heightRatio : widthRatio;
-		}
-		return inSampleSize;
-	}
+        if (height > reqHeight || width > reqWidth) {
+
+            // Calculate ratios of height and width to requested height and
+            // width
+            final int heightRatio = Math.round((float) height
+                    / (float) reqHeight);
+            final int widthRatio = Math.round((float) width / (float) reqWidth);
+
+            // Choose the smallest ratio as inSampleSize value, this will
+            // guarantee
+            // a final image with both dimensions larger than or equal to the
+            // requested height and width.
+            inSampleSize = heightRatio < widthRatio ? heightRatio : widthRatio;
+        }
+        return inSampleSize;
+    }
 
     /**
      * @param bmp                - bitmap to be saved to sdcard
@@ -159,14 +161,14 @@ public class Camera_Helpers {
         return true;
     }
 
-	public static boolean  delSavedImage(String imagePath){
-		boolean bRet = false;
-		try{
-			File file = new File(imagePath);
-			bRet =  file.delete();
-		}catch(NullPointerException e) {
-			Log.d(TAG, "delSavedImage: Please pass in a path string");
-		}
-		return bRet;
-	}
+    public static boolean delSavedImage(String imagePath) {
+        boolean bRet = false;
+        try {
+            File file = new File(imagePath);
+            bRet = file.delete();
+        } catch (NullPointerException e) {
+            Log.d(TAG, "delSavedImage: Please pass in a path string");
+        }
+        return bRet;
+    }
 }
