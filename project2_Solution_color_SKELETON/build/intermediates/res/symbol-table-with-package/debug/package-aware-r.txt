@@ -1586,6 +1586,7 @@ id forever
 id ghost_view
 id ghost_view_holder
 id gone
+id group
 id group_divider
 id groups
 id hideable
@@ -1668,6 +1669,7 @@ id right
 id right_icon
 id right_side
 id rounded
+id saturation
 id save_non_transition_alpha
 id save_overlay_view
 id scale
@@ -1698,6 +1700,7 @@ id showCustom
 id showHome
 id showTitle
 id sketch
+id sketchiness
 id skipCollapsed
 id slide
 id smallLabel
@@ -2002,8 +2005,8 @@ string preference_copied
 string resetButton
 string search_menu_title
 string shareButton
-string shareTitle
 string sharemessage
+string sharesubject
 string status_bar_notification_info_overflow
 string summary_collapsed_preference_list
 string v7_preference_off
