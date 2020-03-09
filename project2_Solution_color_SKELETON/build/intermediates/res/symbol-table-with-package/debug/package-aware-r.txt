@@ -2006,7 +2006,7 @@ string resetButton
 string search_menu_title
 string shareButton
 string sharemessage
-string sharesubject
+string sharetitle
 string status_bar_notification_info_overflow
 string summary_collapsed_preference_list
 string v7_preference_off

@@ -6894,7 +6894,7 @@ public final class R {
     public static final int search_menu_title=0x7f0f0058;
     public static final int shareButton=0x7f0f0059;
     public static final int sharemessage=0x7f0f005a;
-    public static final int sharesubject=0x7f0f005b;
+    public static final int sharetitle=0x7f0f005b;
     public static final int status_bar_notification_info_overflow=0x7f0f005c;
     public static final int summary_collapsed_preference_list=0x7f0f005d;
     public static final int v7_preference_off=0x7f0f005e;

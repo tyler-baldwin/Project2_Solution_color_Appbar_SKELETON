@@ -6,13 +6,13 @@
     <PreferenceCategory android:title="Share Options">
 
         <EditTextPreference
-            android:defaultValue="Default value"
+            android:defaultValue="@string/sharemessage"
             android:key="SHARE_SUBJECT"
             android:selectAllOnFocus="true"
             android:summary="This is the subject of the message you would like to share"
             android:title="Share Subject" />
         <EditTextPreference
-            android:defaultValue="false"
+            android:defaultValue="@string/sharetitle"
             android:key="SHARE_TEXT"
             android:selectAllOnFocus="true"
             android:summary="This is the text you would like to share"
@@ -26,12 +26,14 @@
             android:key="SKETCH"
             app:summary="Set the BW threshold, higher numbers correspond to less detail and a whiter image"
             app:min="0"
+            android:defaultValue="15"
             android:max="100"
             app:enabled="true"
             app:showSeekBarValue="true"
             app:title="Sketchiness" />
         <SeekBarPreference
             android:id="@+id/saturation"
+            android:defaultValue="15"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:key="SAT"

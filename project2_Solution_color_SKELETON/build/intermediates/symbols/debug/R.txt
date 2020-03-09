@@ -2005,7 +2005,7 @@ int string resetButton 0x7f0f0057
 int string search_menu_title 0x7f0f0058
 int string shareButton 0x7f0f0059
 int string sharemessage 0x7f0f005a
-int string sharesubject 0x7f0f005b
+int string sharetitle 0x7f0f005b
 int string status_bar_notification_info_overflow 0x7f0f005c
 int string summary_collapsed_preference_list 0x7f0f005d
 int string v7_preference_off 0x7f0f005e

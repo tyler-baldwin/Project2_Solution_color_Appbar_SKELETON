@@ -3,6 +3,7 @@ package com.example.solution_color;
 
 import android.Manifest;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 
 import androidx.annotation.NonNull;
@@ -67,7 +68,6 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
     private int bwPercent = DEFAULT_BW_PERCENT;
     private String shareSubject;
     private String shareText;
-    private SharedPreferences.OnSharedPreferenceChangeListener listener = null;
 
     //where images go
     private String originalImagePath;   //where orig image is
@@ -85,7 +85,6 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
     Bitmap bmpThresholded;              //the black and white version of original image
     Bitmap bmpThresholdedColor;         //the colorized version of the black and white image
 
-//    SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -109,24 +108,9 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
         //get the default image
         myImage = (ImageView) findViewById(R.id.imageView1);
 
-
-//        listener = new SharedPreferences.OnSharedPreferenceChangeListener() {
-//            public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
-//                switch (key) {
-//                    case "SHARE_SUBJECT":
-//                        shareSubject = prefs.getString(key, null);
-//                        break;
-//                    case "SAT":
-//                        saturation = prefs.getInt(key,99);
-//                        break;
-//                }
-//            }
-//        };
-      //  sp.registerOnSharedPreferenceChangeListener(listener);
-
-        //TODO manage the preferences and the shared preference listenes
-        // TODO and get the values already there getPrefValues(settings);
-        //TODO use getPrefValues(SharedPreferences settings)
+        SharedPreferences a = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        a.registerOnSharedPreferenceChangeListener(this);
+        getPrefValues(a);
 
         // Fetch screen height and width,
         DisplayMetrics metrics = this.getResources().getDisplayMetrics();
@@ -165,13 +149,11 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
         Log.d(DEBUG_TAG, "setImage: bmpOriginal copied");
     }
 
-    //TODO use this to set the following member preferences whenever preferences are changed.
-    //TODO Please ensure that this function is called by your preference change listener
     private void getPrefValues(SharedPreferences settings) {
-        //TODO should track shareSubject, shareText, saturation, bwPercent
-        SharedPreferences.Editor editor = settings.edit();
-        // editor.putString(SHARE_ , )
-
+        this.shareSubject = settings.getString("SHARE_SUBJECT", getResources().getString(R.string.sharetitle));
+        this.shareText = settings.getString("SHARE_TEXT", getResources().getString(R.string.sharemessage));
+        this.saturation = (int) (((double) settings.getInt("SAT", 3)) * 2.55d);
+        this.bwPercent = settings.getInt("SKETCH", 15);
     }
 
     @Override
@@ -221,13 +203,6 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
         //make file where image will be stored
         imagefile.createNewFile();
 
-        // Create an image file name
-//        File storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
-//        File image = File.createTempFile(
-//                fn,  /* prefix */
-//                ".jpg",         /* suffix */
-//                storageDir      /* directory */
-//        );
         // Save a file: path for use with ACTION_VIEW intents
         originalImagePath = imagefile.getAbsolutePath();
         return imagefile;
@@ -434,9 +409,16 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
         if (!verifyPermissions()) {
             return;
         }
-        // Toast.makeText(MainActivity.this, "Share", Toast.LENGTH_SHORT).show();
-        //TODO share the processed image with appropriate subject, text and file URI
-        //TODO the subject and text should come from the preferences set in the Settings Activity
+        String[] shareText2 = {shareText};
+        Intent shareIntent = new Intent();
+        shareIntent.setAction(Intent.ACTION_SEND);
+        shareIntent.setType("application/image");
+
+        shareIntent.putExtra(Intent.EXTRA_STREAM, outputFileUri);
+        shareIntent.putExtra(Intent.EXTRA_SUBJECT,shareSubject);
+        shareIntent.putExtra(Intent.EXTRA_EMAIL,shareText2);
+
+        startActivity(Intent.createChooser(shareIntent,null ));
 
     }
 
@@ -465,20 +447,9 @@ public class MainActivity extends AppCompatActivity implements OnSharedPreferenc
     }
 
 
-    //TODO set up pref changes
     @Override
     public void onSharedPreferenceChanged(SharedPreferences arg0, String arg1) {
-        Toast i = Toast.makeText(this, "FUCKING HELL", Toast.LENGTH_LONG);
-        i.show();
-        Toast io = Toast.makeText(this, arg1, Toast.LENGTH_LONG);
-        io.show();
-        switch (arg1) {
-            case "SHARE_SUBJECT":
-                // shareSubject = arg0.getString()
-
-        }
-        getPrefValues(arg0);
-        //TODO reload prefs at this point
+        getPrefValues(PreferenceManager.getDefaultSharedPreferences((Context) this));
     }
 
     /**
